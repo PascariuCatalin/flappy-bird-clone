@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\Wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|c:\\users\\cata_\\documents\\godot\\flappy-bird-clone\\wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|solutionrelative:wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|c:\\users\\cata_\\documents\\godot\\flappy-bird-clone\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Wall.cs",
               "ToolTip": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\Wall.cs",
               "RelativeToolTip": "Wall.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T18:54:15.594Z",
               "EditorCaption": ""
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T16:38:42.066Z",
               "EditorCaption": ""

@@ -15,4 +15,9 @@ public partial class Wall : Node2D
 	{
 		GlobalPosition += new Vector2(speed, 0) * (float)delta;
 	}
+
+    private void OnArea2dAreaEntered(Area2D area)
+	{
+		this.QueueFree();
+	}
 }

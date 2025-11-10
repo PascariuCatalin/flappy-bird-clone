@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|c:\\users\\cata_\\documents\\godot\\flappy-bird-clone\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|c:\\users\\cata_\\documents\\godot\\flappy-bird-clone\\wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|solutionrelative:wall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|c:\\users\\cata_\\documents\\godot\\flappy-bird-clone\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AAAACDB-95CE-48BC-ABD9-7F7517DB7516}|Flappy Bird clone.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\SpawnWall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SpawnWall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "SpawnWall.cs",
+              "DocumentMoniker": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\SpawnWall.cs",
+              "RelativeDocumentMoniker": "SpawnWall.cs",
+              "ToolTip": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\SpawnWall.cs",
+              "RelativeToolTip": "SpawnWall.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T19:25:15.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Wall.cs",
               "DocumentMoniker": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\Wall.cs",
               "RelativeDocumentMoniker": "Wall.cs",
               "ToolTip": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\Wall.cs",
               "RelativeToolTip": "Wall.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T18:54:15.594Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T16:38:42.066Z",
               "EditorCaption": ""

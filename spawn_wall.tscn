@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://doeyjn1ny3rdx"]
+
+[ext_resource type="Script" uid="uid://cwp3s02oo1d2y" path="res://SpawnWall.cs" id="1_aiwsl"]
+[ext_resource type="PackedScene" uid="uid://bqxh50yg8xatj" path="res://wall.tscn" id="2_ah5t8"]
+
+[node name="Spawn wall" type="Node2D"]
+script = ExtResource("1_aiwsl")
+wall = ExtResource("2_ah5t8")

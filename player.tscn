@@ -1,17 +1,32 @@
-[gd_scene load_steps=4 format=3 uid="uid://deolgmnyrjpo8"]
+[gd_scene load_steps=5 format=3 uid="uid://deolgmnyrjpo8"]
 
 [ext_resource type="Script" uid="uid://dl1tffbhhh0qd" path="res://Player.cs" id="1_4flbx"]
 [ext_resource type="Texture2D" uid="uid://w4nlvv4krded" path="res://icon.svg" id="2_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
-size = Vector2(125, 126)
+size = Vector2(112.85715, 112.85715)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(131.42862, 131.42862)
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(0.7, 0.7)
 script = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.71429217, 0.71429217)
+scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_i3pqv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_onrkg")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1.8732885e-06, 1.8732885e-06)
+scale = Vector2(0.9999995, 0.9999995)
+shape = SubResource("RectangleShape2D_onrkg")
+
+[connection signal="area_entered" from="Area2D" to="." method="OnArea2dAreaEntered"]

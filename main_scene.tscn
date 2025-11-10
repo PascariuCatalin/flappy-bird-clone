@@ -3,22 +3,38 @@
 [ext_resource type="PackedScene" uid="uid://deolgmnyrjpo8" path="res://player.tscn" id="1_0f027"]
 [ext_resource type="PackedScene" uid="uid://dytw71qhkroio" path="res://floor.tscn" id="2_2c62f"]
 [ext_resource type="PackedScene" uid="uid://bm0snhpsui7lu" path="res://clean.tscn" id="2_d5x1h"]
-[ext_resource type="PackedScene" uid="uid://bqxh50yg8xatj" path="res://wall.tscn" id="3_gyfs4"]
+[ext_resource type="PackedScene" uid="uid://doeyjn1ny3rdx" path="res://spawn_wall.tscn" id="4_d5x1h"]
 
 [node name="Main Scene" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(617, 334)
+scale = Vector2(0.93035346, 0.7969298)
+
+[node name="Clean" parent="Camera2D" instance=ExtResource("2_d5x1h")]
+position = Vector2(-808.295, -357.6225)
 
 [node name="Player" parent="." instance=ExtResource("1_0f027")]
 position = Vector2(617, 334)
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-scale = Vector2(1.3290764, 1.1384711)
-
-[node name="Clean" parent="Player/Camera2D" instance=ExtResource("2_d5x1h")]
-position = Vector2(-808.295, -357.6225)
-
 [node name="Floor" parent="." instance=ExtResource("2_2c62f")]
-position = Vector2(580, 652)
+position = Vector2(580, 660.14)
 scale = Vector2(10, 0.2)
 
-[node name="Wall" parent="." instance=ExtResource("3_gyfs4")]
-position = Vector2(1147, 53)
+[node name="Floor2" parent="." instance=ExtResource("2_2c62f")]
+position = Vector2(611, -3)
+scale = Vector2(10, 0.2)
+
+[node name="Floor3" parent="." instance=ExtResource("2_2c62f")]
+position = Vector2(42, 371)
+scale = Vector2(0.2, 10)
+
+[node name="Floor4" parent="." instance=ExtResource("2_2c62f")]
+position = Vector2(1191, 362)
+scale = Vector2(0.2, 10)
+
+[node name="Spawn wall" parent="." instance=ExtResource("4_d5x1h")]
+position = Vector2(612, 272)
+
+[node name="Node2D" type="Node2D" parent="." groups=["ObjectParent"]]
+position = Vector2(1113, 334)
