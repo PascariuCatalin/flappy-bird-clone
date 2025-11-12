@@ -23,16 +23,22 @@ public partial class SpawnWall : Node2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		Spawn();
+
 	}
 
-	private void Spawn()
+    private void On_timer_timeout()
+	{
+		
+		Spawn(GD.RandRange(-100, 100));
+	}
+
+    private void Spawn(float random_number)
 	{
 		Wall spawn_wall = wall.Instantiate<Wall>();
 
 		Object_parent.AddChild(spawn_wall);
 
-		spawn_wall.GlobalPosition = this.GlobalPosition;
+		spawn_wall.GlobalPosition = this.GlobalPosition + new Vector2(0, random_number);
 		spawn_wall.GlobalRotation = this.GlobalRotation;
 	}
 }
