@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dl61umf0eamhu"]
+[gd_scene load_steps=8 format=3 uid="uid://dl61umf0eamhu"]
 
 [ext_resource type="PackedScene" uid="uid://deolgmnyrjpo8" path="res://player.tscn" id="1_0f027"]
+[ext_resource type="PackedScene" uid="uid://b5pskptw7juvy" path="res://background.tscn" id="1_nfk4m"]
 [ext_resource type="PackedScene" uid="uid://dytw71qhkroio" path="res://floor.tscn" id="2_2c62f"]
 [ext_resource type="PackedScene" uid="uid://bm0snhpsui7lu" path="res://clean.tscn" id="2_d5x1h"]
 [ext_resource type="PackedScene" uid="uid://bx5goipuyjpjv" path="res://score.tscn" id="3_8mm7a"]
@@ -9,9 +10,11 @@
 
 [node name="Main Scene" type="Node2D"]
 
+[node name="Background" parent="." instance=ExtResource("1_nfk4m")]
+position = Vector2(-35, -19)
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(617, 334)
-scale = Vector2(0.93035346, 0.7969298)
 
 [node name="Clean" parent="Camera2D" instance=ExtResource("2_d5x1h")]
 position = Vector2(-808.295, -357.6225)

@@ -7,6 +7,15 @@ public partial class Player : CharacterBody2D
 
     public int points = 0;
 
+    [Export]
+    public AudioStreamPlayer2D Point;
+
+    [Export]
+    public AudioStreamPlayer2D Fail;
+
+    [Export]
+    public AudioStreamPlayer2D Jump;
+
     [Signal]
     public delegate void SendScoreEventHandler(int event_score);
 
@@ -27,6 +36,7 @@ public partial class Player : CharacterBody2D
         if (Input.IsActionJustPressed("jump"))
         {
             velocity.Y = jump_velocity;
+            Jump.Play();
         }
 
         Velocity = velocity;
@@ -42,6 +52,8 @@ public partial class Player : CharacterBody2D
         else if(area.CollisionLayer == 2)
         {
             points++;
+
+            Point.Play();
             
             EmitSignal(SignalName.SendScore, points);
         }
@@ -49,6 +61,8 @@ public partial class Player : CharacterBody2D
 
     private void Over()
     {
+        Fail.Play();
+
         EmitSignal(SignalName.Restart);
     }
 

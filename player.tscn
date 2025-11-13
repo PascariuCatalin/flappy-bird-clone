@@ -1,32 +1,51 @@
-[gd_scene load_steps=5 format=3 uid="uid://deolgmnyrjpo8"]
+[gd_scene load_steps=8 format=3 uid="uid://deolgmnyrjpo8"]
 
 [ext_resource type="Script" uid="uid://dl1tffbhhh0qd" path="res://Player.cs" id="1_4flbx"]
-[ext_resource type="Texture2D" uid="uid://w4nlvv4krded" path="res://icon.svg" id="2_onrkg"]
+[ext_resource type="Texture2D" uid="uid://dt8tlpr8hhkev" path="res://Sprites/Fish.png" id="2_onrkg"]
+[ext_resource type="AudioStream" uid="uid://bwp0oqp4enmro" path="res://Audio/Point.wav" id="3_sweqy"]
+[ext_resource type="AudioStream" uid="uid://cet7gjxvpjagt" path="res://Audio/Fail.wav" id="4_2hs0m"]
+[ext_resource type="AudioStream" uid="uid://csura71lsogpb" path="res://Audio/Jump.wav" id="5_1jxqw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
-size = Vector2(112.85715, 112.85715)
+size = Vector2(77.14294, 35.714333)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(131.42862, 131.42862)
+size = Vector2(84.28582, 48.571495)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("Point", "Fail", "Jump")]
 scale = Vector2(0.7, 0.7)
 script = ExtResource("1_4flbx")
+Point = NodePath("Point")
+Fail = NodePath("Fail")
+Jump = NodePath("Jump")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.71429217, 0.71429217)
-scale = Vector2(0.9999998, 0.9999998)
+position = Vector2(-24.285694, -17.857136)
+scale = Vector2(0.9999984, 0.9999984)
 shape = SubResource("RectangleShape2D_i3pqv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(7, 7)
 texture = ExtResource("2_onrkg")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1.8732885e-06, 1.8732885e-06)
-scale = Vector2(0.9999995, 0.9999995)
+position = Vector2(-20.714273, -17.142853)
+scale = Vector2(0.9999984, 0.9999984)
 shape = SubResource("RectangleShape2D_onrkg")
+
+[node name="Point" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_sweqy")
+
+[node name="Fail" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_2hs0m")
+
+[node name="Jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_1jxqw")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+scale = Vector2(0.99999994, 0.99999994)
 
 [connection signal="area_entered" from="Area2D" to="." method="OnArea2dAreaEntered"]
