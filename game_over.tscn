@@ -20,8 +20,18 @@ offset_bottom = 40.0
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer"]
+[node name="Restart2" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume"
+
+[node name="Restart" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
 text = "Restart"
 
-[connection signal="pressed" from="PanelContainer/VBoxContainer/Button" to="." method="Button"]
+[node name="Quit" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Restart2" to="." method="Resume_button"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="Restart_button"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="." method="Quit_button"]

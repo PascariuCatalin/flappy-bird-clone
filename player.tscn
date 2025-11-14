@@ -40,6 +40,7 @@ shape = SubResource("RectangleShape2D_onrkg")
 stream = ExtResource("3_sweqy")
 
 [node name="Fail" type="AudioStreamPlayer2D" parent="."]
+process_mode = 3
 stream = ExtResource("4_2hs0m")
 
 [node name="Jump" type="AudioStreamPlayer2D" parent="."]
