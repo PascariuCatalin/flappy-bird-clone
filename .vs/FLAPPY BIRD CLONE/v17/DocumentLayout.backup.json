@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "GameOver.cs",
               "ToolTip": "C:\\Users\\cata_\\Documents\\Godot\\flappy-bird-clone\\GameOver.cs",
               "RelativeToolTip": "GameOver.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwD0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T19:00:16.375Z",
               "EditorCaption": ""
@@ -79,8 +79,7 @@
               "RelativeToolTip": "Player.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowDkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T16:38:42.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T16:38:42.066Z"
             },
             {
               "$type": "Document",

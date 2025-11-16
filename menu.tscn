@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://c016mkn1hdmgt"]
+
+[ext_resource type="PackedScene" uid="uid://b5pskptw7juvy" path="res://background.tscn" id="1_ouk20"]
+[ext_resource type="Texture2D" uid="uid://d4nsc5x7votmt" path="res://Sprites/Wall.png" id="2_mae5d"]
+[ext_resource type="PackedScene" uid="uid://bce2cv7oor85f" path="res://menu_ui.tscn" id="3_mae5d"]
+[ext_resource type="PackedScene" uid="uid://q4dftd6jnowh" path="res://credits.tscn" id="4_4hy44"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_ouk20")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(665, 139.00002)
+scale = Vector2(7, 7)
+texture = ExtResource("2_mae5d")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(652, 526.00006)
+rotation = 3.1415927
+scale = Vector2(7, 7)
+texture = ExtResource("2_mae5d")
+
+[node name="Menu_UI" parent="." instance=ExtResource("3_mae5d")]
+offset_left = 608.0
+offset_top = 300.0
+offset_right = 708.0
+offset_bottom = 366.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(695, 352)
+
+[node name="Credits" parent="." instance=ExtResource("4_4hy44")]
+offset_left = 733.0
+offset_top = 472.0
+offset_right = 733.0
+offset_bottom = 472.0

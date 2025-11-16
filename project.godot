@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Flappy Bird clone"
-run/main_scene="uid://dl61umf0eamhu"
+run/main_scene="uid://c016mkn1hdmgt"
 config/features=PackedStringArray("4.5", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Music="*res://music.tscn"
 
 [dotnet]
 

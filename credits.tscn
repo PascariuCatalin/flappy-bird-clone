@@ -1,0 +1,105 @@
+[gd_scene load_steps=2 format=3 uid="uid://q4dftd6jnowh"]
+
+[ext_resource type="Texture2D" uid="uid://dt8tlpr8hhkev" path="res://Sprites/Fish.png" id="1_nm7lk"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Code"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Art"
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "SFX
+"
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Music"
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "-"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "-"
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "-
+"
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "-"
+vertical_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="PanelContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Me"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Me"
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Dask
+https://dagurasusk.itch.io/retrosounds"
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Brackeys' Platformer Bundle
+https://brackeysgames.itch.io/brackeys-platformer-bundle"
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(218, 14)
+texture = ExtResource("1_nm7lk")

@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgsmemimitxpg"]
+[gd_scene load_steps=2 format=3 uid="uid://bsye4keih6hye"]
 
-[ext_resource type="Script" uid="uid://c1j27qrhkqis0" path="res://GameOver.cs" id="1_y26ei"]
+[ext_resource type="Script" uid="uid://c8iwh520d0c1l" path="res://Pause.cs" id="1_45vjg"]
 
-[node name="Game over" type="Control"]
+[node name="Pause" type="Control"]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_y26ei")
+script = ExtResource("1_45vjg")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 0
@@ -22,7 +22,13 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
-text = "Game Over"
+text = "Pause"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Resume" type="Button" parent="PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume"
 
 [node name="Restart" type="Button" parent="PanelContainer/VBoxContainer"]
 layout_mode = 2
@@ -32,5 +38,6 @@ text = "Restart"
 layout_mode = 2
 text = "Quit"
 
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="Resume_button"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Restart" to="." method="Restart_button"]
 [connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="." method="Quit_button"]

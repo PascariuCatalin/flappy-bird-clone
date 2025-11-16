@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dl61umf0eamhu"]
+[gd_scene load_steps=9 format=3 uid="uid://dl61umf0eamhu"]
 
 [ext_resource type="PackedScene" uid="uid://deolgmnyrjpo8" path="res://player.tscn" id="1_0f027"]
 [ext_resource type="PackedScene" uid="uid://b5pskptw7juvy" path="res://background.tscn" id="1_nfk4m"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bx5goipuyjpjv" path="res://score.tscn" id="3_8mm7a"]
 [ext_resource type="PackedScene" uid="uid://doeyjn1ny3rdx" path="res://spawn_wall.tscn" id="4_d5x1h"]
 [ext_resource type="PackedScene" uid="uid://bgsmemimitxpg" path="res://game_over.tscn" id="6_hq1ik"]
+[ext_resource type="PackedScene" uid="uid://bsye4keih6hye" path="res://pause.tscn" id="8_66tet"]
 
 [node name="Main Scene" type="Node2D"]
 
@@ -68,6 +69,12 @@ offset_right = 568.0
 offset_bottom = 150.0
 grow_horizontal = 1
 grow_vertical = 1
+
+[node name="Pause" parent="." instance=ExtResource("8_66tet")]
+offset_left = 579.0
+offset_top = 150.0
+offset_right = 579.0
+offset_bottom = 150.0
 
 [connection signal="Restart" from="Player" to="Game over" method="Restart"]
 [connection signal="SendScore" from="Player" to="Score" method="SendScore"]
